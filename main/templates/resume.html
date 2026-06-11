@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="section">
+
+<div class="container text-center">
+
+    <h1 class="section-title d-inline-block mx-auto">
+        Resume
+    </h1>
+
+    <p class="mt-4">
+        Download or view my latest resume to learn more about my education,
+        technical skills, projects, and achievements.
+    </p>
+
+    <div class="mt-5">
+
+        <a href="{% static 'resume/Tanaya_Neelesh_Anap.pdf' %}"
+           target="_blank"
+           class="btn-main me-3">
+
+            👁 View Resume
+
+        </a>
+
+        <a href="{% static 'resume/Tanaya_Neelesh_Anap.pdf' %}"
+           download
+           class="btn-main">
+
+            📄 Download Resume
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+{% endblock %}
