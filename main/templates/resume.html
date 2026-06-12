@@ -4,40 +4,35 @@
 {% block content %}
 
 <section class="section">
+    <div class="container text-center">
 
-<div class="container text-center">
+        <h1 class="section-title title-center d-inline-block mx-auto">
+            Resume
+        </h1>
 
-    <h1 class="section-title d-inline-block mx-auto">
-        Resume
-    </h1>
+        <p class="mt-4">
+            Download or view my latest resume to learn more about my education,
+            technical skills, projects, and achievements.
+        </p>
 
-    <p class="mt-4">
-        Download or view my latest resume to learn more about my education,
-        technical skills, projects, and achievements.
-    </p>
+        <!-- d-flex with flex-column on mobile, flex-row on sm+ -->
+        <div class="mt-5 d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
 
-    <div class="mt-5">
+            <a href="{% static 'resume/Tanaya_Neelesh_Anap.pdf' %}"
+               target="_blank"
+               class="btn-main">
+                👁 View Resume
+            </a>
 
-        <a href="{% static 'resume/Tanaya_Neelesh_Anap.pdf' %}"
-           target="_blank"
-           class="btn-main me-3">
+            <a href="{% static 'resume/Tanaya_Neelesh_Anap.pdf' %}"
+               download
+               class="btn-main">
+                📄 Download Resume
+            </a>
 
-            👁 View Resume
-
-        </a>
-
-        <a href="{% static 'resume/Tanaya_Neelesh_Anap.pdf' %}"
-           download
-           class="btn-main">
-
-            📄 Download Resume
-
-        </a>
+        </div>
 
     </div>
-
-</div>
-
 </section>
 
 {% endblock %}

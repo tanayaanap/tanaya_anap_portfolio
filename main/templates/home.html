@@ -9,10 +9,18 @@
 
 <section class="hero">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center g-4">
 
-            <div class="col-md-7">
-                
+            <!-- Profile image: shows first on mobile (order-1), second on desktop -->
+            <div class="col-12 col-md-5 text-center order-1 order-md-2 animate-fade-in" style="animation-delay: 0.3s;">
+                <img src="{% static 'images/Tanaya.jpeg' %}"
+                     alt="Tanaya Anap"
+                     class="profile-img">
+            </div>
+
+            <!-- Text: shows second on mobile (order-2), first on desktop -->
+            <div class="col-12 col-md-7 order-2 order-md-1">
+
                 <h1 class="hero-title animate-fade-in">
                     Hi, I'm Tanaya Anap
                 </h1>
@@ -22,21 +30,15 @@
                 </p>
 
                 <p class="mt-4 animate-fade-in" style="animation-delay: 0.4s;">
-                    Software Developer, Web & Data Science Enthusiast, and passionate problem solver.
+                    Software Developer, Web &amp; Data Science Enthusiast, and passionate problem solver.
                 </p>
 
                 <div class="animate-fade-in" style="animation-delay: 0.6s;">
-                    <a href="/projects/" class="btn-main mt-3 d-inline-block">
+                    <a href="/projects/" class="btn-main mt-3">
                         View My Projects
                     </a>
                 </div>
 
-            </div>
-
-            <div class="col-md-5 text-center animate-fade-in" style="animation-delay: 0.3s;">
-                <img src="{% static 'images/Tanaya.jpeg' %}"
-                     alt="Tanaya"
-                     class="profile-img">
             </div>
 
         </div>
