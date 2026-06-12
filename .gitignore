@@ -1,0 +1,26 @@
+# Virtual Environment
+venv/
+myenv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# Environment Variables
+.env
+
+# macOS
+.DS_Store
+
+# PythonAnywhere
+*.log
+
+# Static files generated during deployment
+staticfiles/
+
+# Pytest
+.pytest_cache/

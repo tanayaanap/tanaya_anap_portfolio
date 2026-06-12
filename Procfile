@@ -1,0 +1,1 @@
+web: gunicorn tanaya_portfolio.wsgi
